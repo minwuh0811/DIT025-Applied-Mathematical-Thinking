@@ -6,8 +6,8 @@ deltaT= 1    # do not change!
 
 temp= 5            # actual room temperature
 desiredTemp=17     # desired room temperature
-outsideTemp= 5     # temperature outside of room
-maxPower=1000      # for heater fan
+outsideTemp= -5     # temperature outside of room
+maxPower=2720        # for heater fan
 
 timeList = []
 tempList = []
@@ -52,7 +52,7 @@ for i in range(60):
 plt.figure(1)
 
 plt.title('temperature(t)')
-plt.plot(timeList,tempList)
+plt.plot(timeList,tempList,timeList,desiredTempList)
 
 
 
